@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="3155 Activity">
+</head>
+<body>
+    <input id="name-input" type="text" placeholder="Enter your name" />
+    
+    <button id="my-button">Click Me</button>
+    
+    <script>
+        //Declaring a clickable button that interacts with user intup
+      var myButton = document.querySelector('#my-button');
+        //Declaring a line to accept user input and store it to use later
+      var nameInput = document.querySelector('#name-input');
+    
+      //Declaring an event/function for a button click
+      myButton.addEventListener('click', function () {
+        // IF the value of the input field in empty or null the operation will not run
+        // If there is input in the user input field, the querySelector will take the input and give an alert that says "Hello" + the user input
+        if (nameInput.value !== '') {
+          alert('Hello ' + nameInput.value);
+        }
+      });
+    </script>
+</body>
+
+</html>
